@@ -1,0 +1,148 @@
+*{
+ 
+}
+
+:root {
+ --border-color: #E5E7EB;
+ --button-color: #596D48;
+}
+
+body {
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.left {
+    background-color: burlywood;
+    width: 30vw;
+    background-image: url(/sign-up-form/imgs/photo-1541675154750-0444c7d51e8e.avif);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:center;
+}
+.banner {
+    margin: 20vh 0;
+    background-color: rgb(0, 0, 0, .4);
+    color: var(--border-color);
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Norse",'Courier New', Courier, monospace;
+    font-size: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.odin-logo {
+    width: 100px;
+    
+}
+
+.right {
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70vw;
+    height: 100vh;
+    background-color: var(--border-color);
+}
+
+.title-card {
+    font-size: x-large;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 50px;
+}
+
+
+.center-card {
+    padding: 30px 50px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgb(185, 182, 182) ;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+label {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.form-intro {
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.name, .email-phone, .passwords {
+    display: flex;
+    column-gap: 100px;
+    
+}
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--border-color);
+}
+
+input:focus {
+    border: 2px solid rgb(50, 50, 248);
+    box-shadow: 2px 2px 5px  gray;
+    outline: none;
+}
+
+
+.end-card {
+    padding: 50px;
+    font-weight: 600;
+
+}
+
+.end-card a {
+    color: #596D48;
+    font-weight:bolder;
+    text-decoration: none;
+}
+
+.end-card a:link {
+    font-weight: 1000;
+}
+
+button {
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 60px;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 2rem;
+
+    box-shadow:2px 2px 6px 0px gray;
+}
+
+@font-face {
+    font-family: 'Norse'; /*a name to be used later*/
+    src: url('/sign-up-form/fonts/Norse-Bold.otf'); /*URL to font*/
+}

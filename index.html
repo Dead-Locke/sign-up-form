@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="/sign-up-form/styles.css">
+    <script src="script.js"></script>
+<body>
+    <header></header>
+
+    <main>
+
+        <div class="left">
+            <div class="banner"> <img class="odin-logo" src="/sign-up-form//imgs/odin-lined.png" alt="Odin Logo"> Odin</div>
+            <div class="credit">Photo by <a href="https://unsplash.com/photos/OdBFUurPHjo">Sebin Thomas</a> on <a href="https://unsplash.com/">Unspash.com</a></div>
+        </div>
+
+        <div class="right">
+
+            <form action="POST">
+                <div class="title-card">
+                    <div>
+                        This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+                    </div>
+                    <div>
+                        You <em>know</em> you want to.
+                    </div>
+                </div>
+                
+                <div class="center-card">
+                    <div class="form-intro">Let's do this!</div>
+                    
+                    <div class="name">
+                        <div class="input-field">
+                            <label for="firstName">First name</label>
+                            <input type="text" name="firstName" id="firstName">
+                        </div>
+                        <div class="input-field">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName">
+                        </div> 
+                    </div>
+                    <div class="email-phone">
+                        <div class="input-field">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        
+                        
+                        <div class="input-field">
+                            <label for="phone">Phone Number</label>
+                            <input type="number" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="555-555-5555">
+                        </div>
+                    </div>
+                    <div class="passwords">
+
+                        <div class="input-field">
+                            <label for="pw">Password</label>
+                            <input type="password" name="pw" id="pw">
+                        </div>
+                        
+
+                        <div class="input-field">
+                            <label for="confirm">Confirm Password</label>
+                            <input type="password" name="confirm" id="confirm">
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="end-card">
+                    <button type="submit">Create Account</button>
+                    
+                    <div class="login">Already have an account? <a href="">Log in</a> </div>
+                </div>
+
+
+            </form>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
