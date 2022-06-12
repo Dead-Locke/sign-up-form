@@ -5,6 +5,7 @@
 :root {
  --border-color: #E5E7EB;
  --button-color: #596D48;
+ --hover-color: #609734;
 }
 
 body {
@@ -19,8 +20,8 @@ main{
 
 .left {
     background-color: burlywood;
-    width: 30vw;
-    background-image: url(/sign-up-form/imgs/photo-1541675154750-0444c7d51e8e.avif);
+    width: 30%;
+    background-image: url(imgs/photo-1541675154750-0444c7d51e8e.avif);
     background-position: center;
     background-size: cover;
 
@@ -51,13 +52,22 @@ main{
     
 }
 
+.credit {
+    color: var(--border-color);
+}
+
+.credit a {
+    text-decoration: none;
+    color: gray;
+}
+
 .right {
     right: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70vw;
-    height: 100vh;
+    width: 70%;
+    height: 100%;
     background-color: var(--border-color);
 }
 
@@ -81,6 +91,11 @@ main{
     gap: 30px;
 
 }
+
+.required {
+    color: red;
+}
+
 label {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
@@ -112,6 +127,23 @@ input:focus {
     outline: none;
 }
 
+.error {
+    border: 2px solid red;
+    outline: none;
+}
+
+.mismatch {
+    margin-top: 0;
+    font-size: 15px;
+    color: red;
+    opacity: 100%;
+}
+
+.directions {
+    font-size: 15px;
+
+}
+
 
 .end-card {
     padding: 50px;
@@ -120,13 +152,17 @@ input:focus {
 }
 
 .end-card a {
-    color: #596D48;
+    color: var(--button-color);
     font-weight:bolder;
     text-decoration: none;
 }
 
 .end-card a:link {
     font-weight: 1000;
+}
+
+.end-card a:hover {
+    color: var(--hover-color);
 }
 
 button {
@@ -142,7 +178,11 @@ button {
     box-shadow:2px 2px 6px 0px gray;
 }
 
+button:hover {
+    background-color: var(--hover-color);
+}
+
 @font-face {
     font-family: 'Norse'; /*a name to be used later*/
-    src: url('/sign-up-form/fonts/Norse-Bold.otf'); /*URL to font*/
+    src: url('fonts/Norse-Bold.otf'); /*URL to font*/
 }
