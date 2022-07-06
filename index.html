@@ -6,68 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
     
 <body>
-    <header></header>
-
-    <main>
-
+    <main> 
         <div class="left">
-            <div class="banner"> <img class="odin-logo" src="imgs/odin-lined.png" alt="Odin Logo"> Odin</div>
-            <div class="credit">Photo by <a href="https://unsplash.com/photos/OdBFUurPHjo">Sebin Thomas</a> on <a href="https://unsplash.com/">Unspash.com</a></div>
-        </div>
 
-        <div class="right">
+            
+            <div class="title-card">
+                <img class="odin-icon" src="imgs/odin-lined-green-white-back.png" alt="odin icon">
+                <h1>Welcome!</h1>
+                <p>Please Log-in or Sign-up for an account!</p>
+            </div>
 
             <form action="#">
-                <div class="title-card">
-                    <div>
-                        This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
-                    </div>
-                    <div>
-                        You <em>know</em> you want to.
-                    </div>
-                </div>
                 
                 <div class="center-card">
-                    <div class="form-intro">Let's do this!
-                        <div class="directions"><span class="required">*</span> indicates a required field.
-                        </div>
-                    </div>
-                    
                     
                     <div class="name">
                         <div class="input-field">
-                            <label for="firstName">First name <span class="required">*</span></label>
+                            <label for="firstName"><span class="required">*</span>FIRST NAME </label>
                             <input type="text" name="firstName" id="firstName" maxlength="20" minlength="1" required>
                         </div>
                         <div class="input-field">
-                            <label for="lastName">Last Name</label>
+                            <label for="lastName">LAST NAME</label>
                             <input type="text" name="lastName" id="lastName">
                         </div> 
                     </div>
                     <div class="email-phone">
                         <div class="input-field">
-                            <label for="email">Email <span class="required">*</span></label>
+                            <label for="email"><span class="required">*</span>EMAIL</label>
                             <input type="email" name="email" id="email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" required>
                             <div class="email-error-feedback"></div>
                         </div>
                         
                         
                         <div class="input-field">
-                            <label for="phone">Phone Number</label>
+                            <label for="phone">PHONE</label>
                             <input type="number" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="555-555-5555">
                         </div>
                     </div>
                     <div class="passwords">
                         <div class="input-field">
-                            <label for="pass1">Password<span class="required">*</span></label>
+                            <label for="pass1"><span class="required">*</span>PASSWORD</label>
                             <input type="password" name="pass1" id="pass1" minlength="8" maxlength="32" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" required title="Passwords must  be at least 8 char. long and contain: numbers, lowercase and uppercase letters.">
                             <p class="mismatch"></p>
                         </div>
 
                         <div class="input-field">
-                            <label for="pass2">Confirm Password<span class="required">*</span></label>
+                            <label for="pass2"><span class="required">*</span>CONFIRM PASSWORD</label>
                             <input type="password" name="pass2" id="pass2" minlength="8" maxlength="32" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" required title="Passwords must  be at least 8 char. long and contain: numbers, lowercase and uppercase letters.">
                         </div>  
                     </div>
@@ -78,11 +67,33 @@
                     <button type="submit">Create Account</button>
                     
                     <div class="login">Already have an account? <a href="">Log in</a> </div>
+
+                    
                 </div>
 
-
+                
             </form>
+
+            <footer>
+                Dead-Locke ©
+                <script>document.write(new Date().getFullYear())</script>
+                
+                <a href="https://github.com/Dead-Locke/">
+                <img class="link-icon" src="imgs/GitHub-Mark.png" alt="GitHub Link"></a>
+            </footer>
+
         </div>
+
+        <div class="right">
+            <div class="banner">
+                <div class="credit">Photo by <a href="https://unsplash.com/photos/FwEPJvzFnWQ">
+                    Pawel Czerwinski</a> on <a href="https://unsplash.com/">Unsplash.com</a>
+                </div>
+            </div>
+            <img src="imgs/pawel-czerwinski-FwEPJvzFnWQ-unsplash.jpg" alt="abstract green background">
+            
+        </div>
+
     </main>
 
     <footer></footer>
