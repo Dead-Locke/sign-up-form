@@ -1,109 +1,97 @@
 *{
- 
+  
 }
 
 :root {
- --border-color: #E5E7EB;
- --button-color: #596D48;
- --hover-color: #609734;
+    --white: #76887d;
+    --black: #060702;
+    --green: #066c28;
+    --mint-green: #8feaa6;
+    --light-green: #1d9c3d;
+    --border-color: #E5E7EB;
+    --button-color: #596D48;
+    --hover-color: #609734;
+    padding: 20px;
 }
 
 body {
     margin: 0;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Rajdhani','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex; 
+    flex-direction: column;
 }
 main{
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: center;
 }
+
 
 .left {
-    background-color: burlywood;
-    width: 30%;
-    background-image: url(imgs/photo-1541675154750-0444c7d51e8e.avif);
-    background-position: center;
-    background-size: cover;
-
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
-    align-items:center;
-}
-.banner {
-    margin: 20vh 0;
-    background-color: rgb(0, 0, 0, .4);
-    color: var(--border-color);
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-    font-family: "Norse",'Courier New', Courier, monospace;
-    font-size: 100px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
-}
-
-.odin-logo {
-    width: 100px;
-    
-}
-
-.credit {
-    color: var(--border-color);
-}
-
-.credit a {
-    text-decoration: none;
-    color: gray;
-}
-
-.right {
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 70%;
-    height: 100%;
+    justify-content: space-between;
+    border-left: 20px solid var(--green);
     background-color: var(--border-color);
+    height: 900px;
+    box-shadow: 0 15px 15px -10px rgb(185, 182, 182) ;
+
+}
+
+.left form {
+   
+    
+    
+}
+
+.odin-icon {
+    width: 70px;
+    align-self: center;
+    filter: drop-shadow(0 0 0.75rem var(--black));
+
 }
 
 .title-card {
-    font-size: x-large;
-    font-weight: 600;
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
-    padding: 50px;
+    align-items: center;
+    font-size: large;
+    padding: 30px;
+    height: 10%;
+    margin-bottom: 30px;
 }
 
+.title-card > h1 {
+    font-size: 50px;
+    
+}
+
+.title-card > p {
+        margin-top: -30px;
+    
+}
 
 .center-card {
-    padding: 30px 50px;
+    padding: 30px 30px;
     background-color: white;
-    box-shadow: 0 2px 10px rgb(185, 182, 182) ;
+    box-shadow: 0 15px 15px -10px rgb(185, 182, 182) ;
 
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    height: 50%;
+    gap: 2rem;
 
 }
 
 .required {
     color: red;
+    font-size: 1rem;
 }
 
 label {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-size: 1rem;
+    font-weight: bold;
 }
 
-.form-intro {
-    font-size: x-large;
-    font-weight: 600;
-}
 
 .name, .email-phone, .passwords {
     display: flex;
@@ -113,12 +101,13 @@ label {
 .input-field {
     display: flex;
     flex-direction: column;
+    width: 250px;
 }
 
 input {
     font-size: 20px;
     border-radius: 5px;
-    border: 2px solid var(--border-color);
+    border: 1px solid var(--border-color);
 }
 
 input:focus {
@@ -146,43 +135,109 @@ input:focus {
 
 
 .end-card {
-    padding: 50px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
     font-weight: 600;
 
 }
 
 .end-card a {
-    color: var(--button-color);
-    font-weight:bolder;
+    color: var(--green);
+    font-weight:700;
     text-decoration: none;
 }
 
 .end-card a:link {
-    font-weight: 1000;
+    font-weight: 900;
 }
 
 .end-card a:hover {
-    color: var(--hover-color);
+    color: var(--light-green);
+    text-decoration: underline;
 }
 
 button {
-    background-color: var(--button-color);
+    background-color: var(--green);
     border: none;
     border-radius: 10px;
-    padding: 15px 60px;
+    padding: 15px 50px;
     color: white;
-    font-weight: 800;
-    font-size: 18px;
-    margin-bottom: 2rem;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin: 2rem 0;
 
     box-shadow:2px 2px 6px 0px gray;
 }
 
 button:hover {
-    background-color: var(--hover-color);
+    background-color: var(--light-green);
 }
+
+footer {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    padding-bottom: 10px;
+    font-weight: 600;
+    gap: 1rem;
+}
+.link-icon {
+    width: 25px;
+}
+
+
+.credit {
+    z-index: 1;
+    padding: 8px;
+    text-align: center;
+    justify-self: flex-end;
+    
+}
+
+.credit a {
+    text-decoration: none;
+    color: var(--mint-green);
+}
+
+.credit a:hover {
+    color: var(--hover-color);
+}
+
+.right {
+    position: relative;
+    display: flex;
+    align-self: center;
+    width: 400px;
+    height:900px;
+    overflow: hidden;
+    box-shadow: -10px 10px 20px -10px rgb(8, 8, 8) ;
+    
+}
+
+.banner {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0, .8);
+    color: white;
+    
+    font-size: 1rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+} 
+
 
 @font-face {
     font-family: 'Norse'; /*a name to be used later*/
     src: url('fonts/Norse-Bold.otf'); /*URL to font*/
+}
+
+@media only screen and (max-width: 1000px) {
+.right {
+    display: none;
+}
 }
