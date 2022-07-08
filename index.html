@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
@@ -13,10 +15,8 @@
 <body>
     <main> 
         <div class="left">
-
-            
             <div class="title-card">
-                <img class="odin-icon" src="imgs/odin-lined-green-white-back.png" alt="odin icon">
+                <img class="icon" src="imgs/form-icon.png" alt=" icon">
                 <h1>Welcome!</h1>
                 <p>Please Log-in or Sign-up for an account!</p>
             </div>
@@ -45,26 +45,37 @@
                         
                         <div class="input-field">
                             <label for="phone">PHONE</label>
-                            <input type="number" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="555-555-5555">
+                            <input type="number" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="">
                         </div>
                     </div>
                     <div class="passwords">
                         <div class="input-field">
                             <label for="pass1"><span class="required">*</span>PASSWORD</label>
-                            <input type="password" name="pass1" id="pass1" minlength="8" maxlength="32" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" required title="Passwords must  be at least 8 char. long and contain: numbers, lowercase and uppercase letters.">
-                            <p class="mismatch"></p>
+                            <div class="pw-input">
+                                <input type="password" name="pass1" id="pass1" minlength="8" maxlength="32" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" required title="Passwords must  be at least 8 char. long and contain: numbers, lowercase and uppercase letters."> 
+                                <i class="material-icons vis">visibility</i>
+                            </div>
+
+                            <div id="message">
+                                <h3>Password must contain:</h3>
+                                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                                <p id="number" class="invalid">A <b>number</b></p>
+                                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                              </div>
                         </div>
 
                         <div class="input-field">
                             <label for="pass2"><span class="required">*</span>CONFIRM PASSWORD</label>
                             <input type="password" name="pass2" id="pass2" minlength="8" maxlength="32" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" required title="Passwords must  be at least 8 char. long and contain: numbers, lowercase and uppercase letters.">
+                            <p class="mismatch"></p>
                         </div>  
                     </div>
 
                 </div>
 
                 <div class="end-card">
-                    <button type="submit">Create Account</button>
+                    <button class="submit" type="submit">Create Account</button>
                     
                     <div class="login">Already have an account? <a href="">Log in</a> </div>
 
