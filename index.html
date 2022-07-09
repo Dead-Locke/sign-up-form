@@ -38,14 +38,15 @@
                     <div class="email-phone">
                         <div class="input-field">
                             <label for="email"><span class="required">*</span>EMAIL</label>
-                            <input type="email" name="email" id="email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" required>
-                            <div class="email-error-feedback"></div>
+                            <input type="email" name="email" id="email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" required placeholder="example@place.com">
+                            <div class="email-validation"><p id="email-valid" class="invalid">Incorrect email format</p></div>
                         </div>
                         
                         
                         <div class="input-field">
                             <label for="phone">PHONE</label>
                             <input type="number" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="">
+                            <div class="phone-validation"><p id="phone-valid" class="invalid">Incorrect phone-number format</p></div>
                         </div>
                     </div>
                     <div class="passwords">
