@@ -28,25 +28,25 @@
                     <div class="name">
                         <div class="input-field">
                             <label for="firstName"><span class="required">*</span>FIRST NAME </label>
-                            <input type="text" name="firstName" id="firstName" maxlength="20" minlength="1" required>
+                            <input type="text" name="firstName" id="firstName" maxlength="20" minlength="1" required placeholder="John">
                         </div>
                         <div class="input-field">
                             <label for="lastName">LAST NAME</label>
-                            <input type="text" name="lastName" id="lastName">
+                            <input type="text" name="lastName" id="lastName" placeholder="Doe">
                         </div> 
                     </div>
                     <div class="email-phone">
                         <div class="input-field">
                             <label for="email"><span class="required">*</span>EMAIL</label>
                             <input type="email" name="email" id="email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" required placeholder="example@place.com">
-                            <div class="email-validation"><p id="email-valid" class="invalid">Incorrect email format</p></div>
+                            <p id="email-valid" class="invalid">Incorrect E-mail format</p>
                         </div>
                         
                         
                         <div class="input-field">
                             <label for="phone">PHONE</label>
-                            <input type="number" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="">
-                            <div class="phone-validation"><p id="phone-valid" class="invalid">Incorrect phone-number format</p></div>
+                            <input type="number" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="555-123-4567">
+                            <p id="phone-valid" class="invalid">Incorrect phone number format</p>
                         </div>
                     </div>
                     <div class="passwords">
