@@ -32,6 +32,6 @@ This is a basic sign-up form for the [Odin Project Carriculum](https://www.theod
 
 ---
 ### Future features:
-- [] Make the page more responsive. 
-- [] Add min/max length validation with responsive error messages.
-- [] Support for international phone number formats. 
+- [ ] Make the page more responsive. 
+- [ ] Add min/max length validation with responsive error messages.
+- [ ] Support for international phone number formats. 
