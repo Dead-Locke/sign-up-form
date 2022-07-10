@@ -2,7 +2,7 @@
 
 ![](imgs/signupform.png)
 
-### [Live Version]()
+### [Live Version](https://dead-locke.github.io/sign-up-form/)
 ---
 This is a basic sign-up form for the [Odin Project Carriculum](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form) that includes client-side valdiation and password matching validation.
 
